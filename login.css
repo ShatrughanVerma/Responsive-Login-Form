@@ -1,0 +1,126 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Centering the form */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Container Styling */
+.contact-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Input Fields */
+.form-container {
+  width: 100%;
+}
+
+.username, .password {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.user-input, .pass-input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+#togglePassword {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Button */
+button[type="submit"] {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+/* Keep me logged in */
+.keepme {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.keepme input {
+  margin-right: 5px;
+}
+
+/* Forgot Password Link */
+.link {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .contact-container {
+      width: 90%;
+      padding: 15px;
+  }
+
+  .title {
+      font-size: 20px;
+  }
+
+  .user-input, .pass-input {
+      font-size: 14px;
+  }
+
+  button[type="submit"] {
+      font-size: 14px;
+  }
+}
